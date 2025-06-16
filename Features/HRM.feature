@@ -1,9 +1,10 @@
 Feature: OrangeHRM Login
 
+  Background:
+    Given I launch the chrome browser
+    When I open orange the hrm homepage
 
   Scenario Outline: Logo Presence on OrangeHRMpage
-    Given I launch chrome browser
-    When I open orange hrm homepage
     Then I verify user enters <username> and <password>
     And close browser
 
@@ -15,12 +16,10 @@ Feature: OrangeHRM Login
 
 
   Scenario Outline: Login with credentials on OrangeHRMpage
-    Given I launch chrome browser
-    When I open orange hrm homepage
     Then I verify user enters <username> and <password>
     And close browser
 
     Examples:
-      | username | Password |
+      | username | password |
       | Raghav   | 1238     |
       | Ragh     | 12738    |

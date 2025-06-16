@@ -42,9 +42,9 @@ driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
     public void i_verify_that_the_logo_present_on_page(String username, String password) throws InterruptedException {
 
         driver.findElement(By.name("username")).sendKeys(username);
-        Thread.sleep(30000);
+        Thread.sleep(3000);
         driver.findElement(By.name("password")).sendKeys(password);
-        Thread.sleep(30000);
+        Thread.sleep(3000);
 
         // Write code here that turns the phrase above into concrete actions
 
