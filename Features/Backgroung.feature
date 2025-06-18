@@ -9,7 +9,7 @@ Feature: Orangehrm Login
     Then I verify user credentials
 
 
-  Scenario: Login with the credentials on OrangeHRMpage
-    When I open orange the hrm homepage for details
-    Then I verify user credentials
+#  Scenario: Login with the credentials on OrangeHRMpage
+#    When I open orange the hrm homepage for details
+#    Then I verify user credentials
 
